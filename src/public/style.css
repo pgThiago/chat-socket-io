@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url('./assets/background.jpg')
+}
+
+.container {
+    width: 50%;
+    height: 90vh;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 900px){
+    .container {
+        width: 90%;
+    }   
+}
+
+.container h1 {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;    
+    color: #FFF;
+}
+
+.container h2 {
+    margin: 1rem 0 1rem 0;
+    font-size: 1rem;
+    color: #FFF;
+    align-self: flex-start;
+}
+
+#messages {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 30rem;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+ul {
+    color: #FFF;
+    padding: 1rem;
+}
+
+ul li {
+    color: #FFF;
+    font-size: 20px;
+    list-style: none;
+    font-size: 1rem;    
+}
+
+form {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form input {
+    width: 100%;
+    height: 25%;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem
+}
+
+form button {
+    width: 100%;
+    height: 20%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-property: background-color, color;
+    transition: 1s linear;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+form button:hover {
+    color: #000;
+    background-color: rgba(255, 255, 255);
+}
