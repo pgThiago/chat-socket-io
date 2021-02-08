@@ -1,6 +1,6 @@
-// const socket = io(`http://localhost:3333/`)
-const room = window.location.pathname.replace(/\//g, '')
-const socket = io(`http://localhost:3333/${room}`)
+const room = location.pathname.replace(/\//g, '')
+const hostname = location.hostname.includes('localhost') ? `http://localhost:3333/${room}` : `https://talk-socket-io.herokuapp.com/${room}`
+const socket = io(hostname)
 
 let user = null
 let inputIsEmpty = true
