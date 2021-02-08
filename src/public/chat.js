@@ -1,5 +1,6 @@
 const room = location.pathname.replace(/\//g, '')
-const hostname = location.hostname.includes('localhost') ? `http://localhost:3333/${room}` : `https://talk-socket-io.herokuapp.com/${room}`
+// const hostname = location.hostname.includes('localhost') ? `http://localhost:3333/${room}` : `https://talk-socket-io.herokuapp.com/${room}`
+const hostname = location.hostname.includes('localhost') ? `http://localhost:3333/` : `https://talk-socket-io.herokuapp.com/`
 const socket = io(hostname)
 
 let user = null
